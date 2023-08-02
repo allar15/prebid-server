@@ -47,7 +47,7 @@ type extCacheInstructions struct {
 	cacheBids, cacheVAST, returnCreative bool
 }
 
-// Exchange runs Auctions. Implementations must be threadsafe, and will be shared across many goroutines.
+// Exchange runs Auctions. Implementations must be threadsafe, and will be shared across many goroutines
 type Exchange interface {
 	// HoldAuction executes an OpenRTB v2.5 Auction.
 	HoldAuction(ctx context.Context, r *AuctionRequest, debugLog *DebugLog) (*AuctionResponse, error)
